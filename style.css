@@ -1,0 +1,826 @@
+/************************************* FONTS FACE ***************************************/
+@font-face {
+  font-family: "EikoMEDIUM";
+  src: url("fonts/PPEiko-Medium.woff2");
+}
+
+@font-face {
+  font-family: "EuclidBOLD";
+  src: url("fonts/Euclid Circular A Bold.woff2");
+}
+
+@font-face {
+  font-family: "EuclidLIGHT";
+  src: url("fonts/Euclid Circular A Light.woff2");
+}
+
+@font-face {
+  font-family: "EuclidREGULAR";
+  src: url("fonts/Euclid Circular A Regular.woff2");
+}
+
+@font-face {
+  font-family: "EuclidMEDIUM";
+  src: url("fonts/Euclid Circular A Medium.woff2");
+}
+
+@font-face {
+  font-family: "DidotREGULAR";
+  src: url("fonts/Didot Regular.woff2");
+}
+
+@font-face {
+  font-family: "DidotBOLD";
+  src: url("fonts/Didot LT Std Bold.woff2");
+}
+
+@font-face {
+  font-family: "DidotMEDIUM";
+  src: url("fonts/Didot Medium.woff2");
+}
+
+/************************************* BODY / BALISE DE BASE ***************************************/
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  --color-text: #000;
+  --aspect-ratio: 1/1.5;
+  --imgwidthmax: 500px;
+  --size-title: 15vw;
+  --font-weight-title: 400;
+  --aspect-ratio: 32/17;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.black {
+  background-color: black;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  --color-text: #000;
+  --aspect-ratio: 1/1.5;
+  --imgwidthmax: 500px;
+  --size-title: 15vw;
+  --font-weight-title: 400;
+  --aspect-ratio: 32/17;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.white {
+  background-color: white;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  --color-text: #000;
+  --aspect-ratio: 1/1.5;
+  --imgwidthmax: 500px;
+  --size-title: 15vw;
+  --font-weight-title: 400;
+  --aspect-ratio: 32/17;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  font-size: 1em;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  font-weight: normal;
+}
+
+/************************************* KEYFRAMES TRANSITIONS PAGE ROTATE ***************************************/
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+.load {
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
+}
+
+/************************************* HEADER INDEX ***************************************/
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2rem;
+  mix-blend-mode: difference;
+  top: 0;
+  position: fixed;
+  width: 96%;
+  top: -80px;
+  -webkit-transition: 0.65s ease;
+  transition: 0.65s ease;
+  z-index: 99;
+}
+
+.nav .allcollections {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav .allcollections:before {
+  content: "";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0px;
+  width: 0px;
+  margin-top: 1rem;
+  margin-left: -5rem;
+  opacity: 1;
+  background-color: #bbfeee;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav .allcollections:hover {
+  text-indent: 20px;
+}
+
+.nav .allcollections:hover:before {
+  width: 60px;
+  height: 2px;
+  opacity: 1;
+  text-indent: 0px;
+}
+
+.nav .allcollections a {
+  color: white;
+  font-family: "EuclidREGULAR";
+  font-size: 1.25em;
+}
+
+.nav .about {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav .about:before {
+  content: "";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0px;
+  width: 0px;
+  margin-top: 1rem;
+  margin-left: 9.5rem;
+  opacity: 1;
+  background-color: #bbfeee;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav .about:hover {
+  text-indent: 20px;
+}
+
+.nav .about:hover:before {
+  width: 60px;
+  height: 2px;
+  opacity: 1;
+  text-indent: 0px;
+}
+
+.nav .about a {
+  color: white;
+  font-family: "EuclidREGULAR";
+  font-size: 1.25em;
+}
+
+.nav.fixed {
+  position: fixed;
+}
+
+/************************************* IMG BACKGROUND VISUEL ***************************************/
+.img-visuel-background {
+  position: relative;
+  background: url(img/visuel.png);
+  height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.img-visuel-background:hover {
+  cursor: url("img/arrowscrolldown.svg"), auto;
+}
+
+/************************************* MUSIC WEBSITE ***************************************/
+.pauseplay {
+  position: fixed;
+  margin-top: 48rem;
+  margin-left: 2rem;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.pauseplay #btnVideo {
+  z-index: 100;
+  background: 0;
+  border: 0;
+  color: #000000;
+  cursor: pointer;
+  font-family: "EuclidMEDIUM";
+}
+
+/************************************* INDEX ***************************************/
+.section-discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16rem;
+}
+
+.section-discover .text-discover h1,
+.section-discover h2 {
+  color: white;
+  font-family: "didotBOLD";
+  font-size: 5em;
+  text-align: center;
+}
+
+.section-discover .text-discover h1 span,
+.section-discover h2 span {
+  color: #bbfeee;
+}
+
+.section-discover .text-discover h1:hover {
+  cursor: url("img/arrowdiscover.svg"), auto;
+}
+
+.section-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20rem;
+}
+
+.section-video video {
+  width: 16.65%;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 0px 15px -8px #000000;
+          box-shadow: 6px 0px 15px -8px #000000;
+}
+
+.container {
+  background-color: white;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .title1 {
+  margin-top: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.container .title1 h2 {
+  font-family: "didotBOLD";
+  font-size: 2.5em;
+}
+
+.container .title1 p {
+  font-family: "EuclidLIGHT";
+  font-size: 1em;
+  margin-top: 0.1rem;
+}
+
+.container .section-concept-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+.container .section-concept-text .concept-text {
+  position: relative;
+  font-size: 8em;
+  font-family: "didotBOLD";
+  padding: 128px;
+  margin-top: 7rem;
+}
+
+.container .section-concept-text .img-concept {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 175px;
+}
+
+.container .section-concept-text .text-idea-process {
+  margin-top: 12rem;
+  margin-right: 3rem;
+}
+
+.container .section-concept-text .text-idea-process h2 {
+  font-family: "didotBOLD";
+  font-size: 2em;
+  margin-top: 4rem;
+}
+
+.container .section-concept-text .text-idea-process p {
+  font-family: "EuclidLIGHT";
+  font-size: 1em;
+  margin-top: 1.5rem;
+  line-height: 25px;
+}
+
+.container .section-concept-text .text-idea-process .btn1 {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 4rem;
+  font-family: "EuclidREGULAR";
+  opacity: 0.5;
+}
+
+.container .text-copyright {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container .text-copyright h2 {
+  font-family: "EuclidLIGHT";
+}
+
+/************************************* COLLECTIONS ***************************************/
+body.background-collections {
+  background: url(img/backgroundcollections.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body.background-collections:hover {
+  cursor: url("img/cursorcollectionsanimals.png") auto;
+}
+
+.nav-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-about .about {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav-about .about:before {
+  content: "";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0px;
+  width: 0px;
+  margin-top: 2.6rem;
+  margin-left: 14.5rem;
+  opacity: 1;
+  background-color: black;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav-about .about:hover {
+  text-indent: 20px;
+}
+
+.nav-about .about:hover:before {
+  width: 60px;
+  height: 2px;
+  opacity: 1;
+  text-indent: 0px;
+}
+
+.nav-about .about p {
+  color: black;
+  font-family: "EuclidREGULAR";
+  font-size: 1.25em;
+  margin: 25px 122px;
+}
+
+.section-collections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  margin-left: 2rem;
+  z-index: 2;
+}
+
+.section-collections ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40rem;
+  font-family: "EuclidREGULAR";
+  gap: 0.3rem;
+}
+
+.section-collections li {
+  list-style-type: none;
+  color: #000000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0.5;
+  font-size: 0.75em;
+  mix-blend-mode: difference;
+}
+
+.section-collections li:hover {
+  -webkit-transform: scaleX(2.5);
+          transform: scaleX(2.5);
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+  opacity: 1;
+  font-size: 1.2em;
+  font-family: "EuclidMEDIUM";
+  cursor: pointer;
+}
+
+.section-collections .variations {
+  -webkit-transform: scaleX(2.5);
+          transform: scaleX(2.5);
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+  opacity: 1;
+  font-size: 1.2em;
+  font-family: "EuclidMEDIUM";
+  cursor: pointer;
+}
+
+.section-collections .animals {
+  -webkit-transform: scaleX(2.5);
+          transform: scaleX(2.5);
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+  opacity: 1;
+  font-size: 1.2em;
+  font-family: "EuclidMEDIUM";
+  cursor: pointer;
+}
+
+.section-collections .soon {
+  -webkit-transform: scaleX(2.5);
+          transform: scaleX(2.5);
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+  opacity: 1;
+  font-size: 1.2em;
+  font-family: "EuclidMEDIUM";
+  cursor: pointer;
+}
+
+.section-animals-soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-animals-soon .animals-soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 23rem;
+  font-family: "DidotBOLD";
+  font-size: 2em;
+}
+
+.section-animals-soon .animals-soon:hover {
+  cursor: wait;
+}
+
+.section-soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-soon .soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 23rem;
+  font-family: "DidotBOLD";
+  font-size: 2em;
+}
+
+.section-soon .soon:hover {
+  cursor: wait;
+}
+
+/************************************* ABOUT ***************************************/
+.nav-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-close .close {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav-close .close:before {
+  content: "";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0px;
+  width: 0px;
+  margin-top: 2.6rem;
+  margin-left: 14.5rem;
+  opacity: 1;
+  background-color: white;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.nav-close .close:hover {
+  text-indent: 20px;
+}
+
+.nav-close .close:hover:before {
+  width: 60px;
+  height: 2px;
+  opacity: 1;
+  text-indent: 0px;
+}
+
+.nav-close .close p {
+  color: white;
+  font-family: "EuclidREGULAR";
+  font-size: 1.5em;
+  margin: 25px 122px;
+}
+
+.section-izidesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 9rem;
+}
+
+.section-izidesign .izidesign h2 {
+  color: white;
+  font-family: "didotBOLD";
+  font-size: 15em;
+  margin-top: 10rem;
+}
+
+.section-izidesign .abouts li {
+  color: white;
+  font-family: "EuclidLIGHT";
+  list-style: none;
+  text-align: initial;
+  margin-left: -2.5rem;
+  margin-top: 0.5rem;
+}
+
+.section-izidesign .projects {
+  color: white;
+  font-family: "EuclidBOLD";
+  opacity: 0.59;
+  margin-top: 5rem;
+}
+
+.section-izidesign .variations {
+  margin-top: 2rem;
+}
+
+.section-izidesign .variations a {
+  color: white;
+  font-family: "EuclidMEDIUM";
+  font-size: 1.5em;
+  opacity: 0.28;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.section-izidesign .variations a:hover {
+  opacity: 1;
+}
+
+/************************************* RESPONSIVE ***************************************/
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  body {
+    margin: 10px;
+  }
+  .section-discover .circle svg {
+    margin-top: 1rem;
+    margin-left: -18rem;
+  }
+  .section-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .section-video video {
+    width: 84.65%;
+  }
+  .container .title1 {
+    margin-left: 0;
+    padding: 2rem;
+  }
+  .section-concept-text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .section-concept-text .concept-text {
+    padding: 0;
+    font-size: 4em;
+  }
+  .container .section-concept-text .img-concept {
+    margin: 0;
+    text-align: -webkit-right;
+  }
+  .container .section-concept-text .img-concept img {
+    width: 73%;
+  }
+  .container .section-concept-text .text-idea-process {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  .container .section-concept-text .text-idea-process {
+    margin-right: 0;
+  }
+  .container .section-concept-text .text-idea-process .btn1 {
+    opacity: 1;
+  }
+  .section-collections {
+    margin-left: 0;
+  }
+  .container-collections .variations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-collections .variations .img-variations img {
+    width: 100%;
+  }
+  .container-collections .variations .img-variations-right img {
+    margin-right: 0;
+  }
+  .container-collections .variations .img-variations-left img {
+    margin-left: 0;
+  }
+  .nav-about .about p {
+    margin: 25px 75px;
+  }
+  .nav-close .close p {
+    margin: 25px 75px;
+  }
+  .section-izidesign {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  .section-izidesign .izidesign h2 {
+    font-size: 7em;
+    margin-top: 5rem;
+  }
+  .section-izidesign .variations a {
+    font-size: 1.7em;
+  }
+  .section-izidesign .abouts {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  .container .title1 {
+    margin-left: 0rem;
+    padding: 2rem;
+  }
+  .container .section-concept-text {
+    gap: 0;
+  }
+  .container .section-concept-text .concept-text {
+    padding: 25px;
+  }
+  .container .section-concept-text .img-concept {
+    margin: 81px;
+  }
+  .container .section-concept-text .text-idea-process {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  .container .section-concept-text .text-idea-process .btn1 {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name=" robots" content=" follow" />
+    <meta name=" author" content=" Jerôme Bareille aka IZI DESIGN" />
+    <meta name=" copyright" content=" Titulaire des droits" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COLLECTIONS | JERÔME BAREILLE</title>
+    <meta
+      name="description"
+      content="animations images scroll for collections izi design."
+    />
+    <meta
+      name="keywords"
+      content="smooth scrolling, animation, scroll, website, images, web development, javascript"
+    />
+    <link rel="stylesheet" type="text/css" href="scrollcollections.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="background-collections">
+    <header>
+      <nav class="nav-about">
+        <div class="about">
+          <a href="about.html">
+            <p>About</p>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="pauseplay">
+        <button id="btnVideo" onclick="playAndPause()">Pause II</button>
+      </div>
+      <audio id="mySong" loop autoplay playsinline>
+        <source src="img/musicwebsite.mp3" type="audio/mp3" />
+      </audio>
+      <section class="section-collections">
+        <ul>
+          <a href="./collections.html">
+            <li class="variations">VARIATIONS</li>
+          </a>
+          <a href="collectionsanimals.html">
+            <li>ANIMALS</li>
+          </a>
+          <a href="collectionssoon.html">
+            <li>SOON</li>
+          </a>
+          <a href="index.html" onclick="window.history.back();return false;">
+            <li class="active arrow-back-index">
+              <img src="img/backindex.svg" alt="arrow back to index" />
+            </li>
+          </a>
+        </ul>
+      </section>
+      <div data-scroll class="page page--layout-2 load">
+        <div class="content content--full content--alternate">
+          <div class="content__item content__item--wide">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(img/cadre1.png)"
+              ></div>
+            </div>
+            <h2 class="content__item-title">01</h2>
+            <p class="title-variations">YOGA</p>
+            <p class="content__item-description">
+              Une variation réversible des propriétés physiques locales du
+              milieu. Cette collection fait à la fois références aux ondes
+              visuelles et sonores
+            </p>
+          </div>
+          <div class="content__item content__item--wide">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(img/cadre2.png)"
+              ></div>
+            </div>
+            <h2 class="content__item-title">02</h2>
+            <p class="title-variations">LOTUS</p>
+            <p class="content__item-description">
+              Une variation réversible des propriétés physiques locales du
+              milieu. Cette collection fait à la fois références aux ondes
+              visuelles et sonores
+            </p>
+          </div>
+          <div class="content__item content__item--wide">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(img/cadre3.png)"
+              ></div>
+            </div>
+            <h2 class="content__item-title">03</h2>
+            <p class="title-variations">OEIL</p>
+            <p class="content__item-description">
+              Une variation réversible des propriétés physiques locales du
+              milieu. Cette collection fait à la fois références aux ondes
+              visuelles et sonores
+            </p>
+          </div>
+          <div class="content__item content__item--wide">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(img/cadre4.png)"
+              ></div>
+            </div>
+            <h2 class="content__item-title">04</h2>
+            <p class="title-variations">ORIGIN</p>
+            <p class="content__item-description">
+              Une variation réversible des propriétés physiques locales du
+              milieu. Cette collection fait à la fois références aux ondes
+              visuelles et sonores
+            </p>
+          </div>
+          <div class="content__item content__item--wide">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(img/cadre5.png)"
+              ></div>
+            </div>
+            <h2 class="content__item-title">05</h2>
+            <p class="title-variations">TOURBILLON</p>
+            <p class="content__item-description">
+              Une variation réversible des propriétés physiques locales du
+              milieu. Cette collection fait à la fois références aux ondes
+              visuelles et sonores
+            </p>
+          </div>
+          <div class="content__item content__item--wide">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(img/cadre6.png)"
+              ></div>
+            </div>
+            <h2 class="content__item-title">06</h2>
+            <p class="title-variations">VARIATION</p>
+            <p class="content__item-description">
+              Une variation réversible des propriétés physiques locales du
+              milieu. Cette collection fait à la fois références aux ondes
+              visuelles et sonores
+            </p>
+          </div>
+          <div class="content__item content__item--wide">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(img/cadre7.png)"
+              ></div>
+            </div>
+            <h2 class="content__item-title">07</h2>
+            <p class="title-variations">VISAGE</p>
+            <p class="content__item-description">
+              Une variation réversible des propriétés physiques locales du
+              milieu. Cette collection fait à la fois références aux ondes
+              visuelles et sonores
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

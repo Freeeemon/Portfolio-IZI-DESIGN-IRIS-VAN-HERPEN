@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name=" robots" content=" follow"/>
+    <meta name=" author" content=" Jerôme Bareille aka IZI DESIGN"/>
+    <meta name=" copyright" content=" Titulaire des droits"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This website is defined to be a portfolio, that of Jerôme Bareille. All his collections are present.">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>PORTFOLIO JERÔME</title>
+    <!-- <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-NDGMRWKCCS');
+</script> -->
+  </head>
+
+  <body class="black">
+    <header>
+      <nav class="nav">
+        <div class="allcollections">
+          <a href="collections.html">Collections</a>
+        </div>
+        <div class="logo">
+          <a href="index.html"></a>
+            <img src="img/Logo_izidesign.png" alt="logoizidesign" />
+          </a>
+        </div>
+        <div class="about">
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="load">
+      <div class="pauseplay">
+        <button id="btnVideo" onclick="playAndPause()">Pause II</button>
+      </div>
+      <audio id="mySong" loop autoplay playsinline>
+        <source src="img/musicwebsite.mp3" type="audio/mp3">
+      </audio>
+    <div class="img-visuel-background" onclick="scrollsection()"></div>
+      <section class="section-discover">
+        <div class="text-discover">
+          <a href="collections.html"><h1>Discover the variation<span>*</span></h1></a>
+          <h2>collection</h2>
+        </div>
+      </section>
+
+      <section class="section-video" id="scrollhere">
+        <video src="img/oeiloop_1.mp4" preload="auto" autoplay loop muted></video>
+        <video src="img/yoga_1.mp4" preload="auto" autoplay loop muted></video>
+        <video src="img/originloop_1.mp4" preload="auto" autoplay loop muted></video>
+        <video src="./img/tourbillon_1.mp4" preload="auto" autoplay loop muted></video>
+        <video src="img/variation_1.mp4" preload="auto" autoplay loop muted></video>
+        <video src="img/visage_1.mp4" preload="auto" autoplay loop muted></video>
+      </section>
+
+      <section class="container">
+        <div class="title1">
+          <h2>“Variation” :</h2>
+          <p>Cette partition graphique s’exprime comme un nouveau langage cinétique.</p>
+          <p></p>
+          <p>
+            Créée avec des effets de moirages, de trames qui donnent vie à des émotions,
+          </p>
+          <p></p>
+          <p>des mouvements et des interprétations qui mêlent sensualité et musique classique.</p>
+        </div>
+        <section class="section-concept-text">
+          <div class="concept-text">
+            <h2>THE</h2>
+            <h2>CONCEPT</h2>
+          </div>
+          <div class="text-idea-process">
+            <h2>The idea</h2>
+            <p>
+              Lors de la conception de ces œuvres, Jérôme Bareille suit la démarche d’un compositeur de musique classique. Ses créations aspirent à être étendues en Kinégram tout en collaborant avec des musiciens pour donner un mouvement physique réel aux œuvres en faisant glisser des trames sur certaines portions.
+            </p>
+            <h2>The process</h2>
+            <p>
+              Il expérimente avec des formes paramétriques sur logiciel pour créer des notes graphiques.
+              Ainsi il se laisse porter par les émotions, la musique et les impressions optiques dans un état semi-hypnotique.
+            </p>
+            <a href="collections.html"><button class="btn1" type="button">DISCOVER ➛</button></a>
+          </div>
+        </section>
+        <div class="text-copyright">
+          <h2>Copyright © & ℗ IZI DESIGN - Jérome Bareille</h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

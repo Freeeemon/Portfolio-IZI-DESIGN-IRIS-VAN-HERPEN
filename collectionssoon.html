@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name=" robots" content=" follow" />
+    <meta name=" author" content=" Jerôme Bareille aka IZI DESIGN" />
+    <meta name=" copyright" content=" Titulaire des droits" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLLECTIONS PORTFOLIO JEROME</title>
+    <meta
+      name="description"
+      content="animations images scroll for collections izi design."
+    />
+    <meta
+      name="keywords"
+      content="smooth scrolling, animation, scroll, website, images, web development, javascript"
+    />
+    <link rel="stylesheet" type="text/css" href="scrollcollections.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="white background-collections">
+    <header>
+      <nav class="nav-about">
+        <div class="about">
+          <a href="about.html">
+            <p>About</p>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="pauseplay">
+        <button id="btnVideo" onclick="playAndPause()">Pause II</button>
+      </div>
+      <audio id="mySong" loop autoplay playsinline>
+        <source src="img/musicwebsite.mp3" type="audio/mp3" />
+      </audio>
+      <section class="section-collections">
+        <ul>
+          <a href="./collections.html">
+            <li>VARIATIONS</li>
+          </a>
+          <a href="collectionsanimals.html">
+            <li>ANIMALS</li>
+          </a>
+          <a href="collectionssoon.html">
+            <li class="soon">SOON</li>
+          </a>
+          <a href="index.html" onclick="window.history.back();return false;">
+            <li class="active arrow-back-index">
+              <img src="img/backindex.svg" alt="arrow back to index" />
+            </li>
+          </a>
+        </ul>
+      </section>
+      <section class="section-soon">
+        <div class="soon">
+          <h2>SOON</h2>
+          <h2>COLLECTIONS VARIATION SOON</h2>
+        </div>
+      </section>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

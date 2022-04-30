@@ -1,0 +1,638 @@
+/************************************* FONTS FACE ***************************************/
+
+@font-face {
+  font-family: "EikoMEDIUM";
+  src: url("fonts/PPEiko-Medium.woff2");
+}
+@font-face {
+  font-family: "EuclidBOLD";
+  src: url("fonts/Euclid Circular A Bold.woff2");
+}
+@font-face {
+  font-family: "EuclidLIGHT";
+  src: url("fonts/Euclid Circular A Light.woff2");
+}
+@font-face {
+  font-family: "EuclidREGULAR";
+  src: url("fonts/Euclid Circular A Regular.woff2");
+}
+@font-face {
+  font-family: "EuclidMEDIUM";
+  src: url("fonts/Euclid Circular A Medium.woff2");
+}
+@font-face {
+  font-family: "DidotREGULAR";
+  src: url("fonts/Didot\ Regular.woff2");
+}
+@font-face {
+  font-family: "DidotBOLD";
+  src: url("fonts/Didot\ LT\ Std\ Bold.woff2");
+}
+@font-face {
+  font-family: "DidotMEDIUM";
+  src: url("fonts/Didot\ Medium.woff2");
+}
+
+/************************************* BODY / BALISE DE BASE ***************************************/
+
+body {
+  box-sizing: border-box;
+  --color-text: #000;
+  --aspect-ratio: 1/1.5;
+  --imgwidthmax: 500px;
+  --size-title: 15vw;
+  --font-weight-title: 400;
+  --aspect-ratio: 32/17;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.black {
+  background-color: black;
+  margin: 0;
+  box-sizing: border-box;
+  --color-text: #000;
+  --aspect-ratio: 1/1.5;
+  --imgwidthmax: 500px;
+  --size-title: 15vw;
+  --font-weight-title: 400;
+  --aspect-ratio: 32/17;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.white {
+  background-color: white;
+  margin: 0;
+  box-sizing: border-box;
+  --color-text: #000;
+  --aspect-ratio: 1/1.5;
+  --imgwidthmax: 500px;
+  --size-title: 15vw;
+  --font-weight-title: 400;
+  --aspect-ratio: 32/17;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  box-shadow: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  font-size: 1em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: normal;
+}
+
+/************************************* KEYFRAMES TRANSITIONS PAGE ROTATE ***************************************/
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+.load {
+  animation: transitionIn 3s;
+}
+
+/************************************* HEADER INDEX ***************************************/
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  mix-blend-mode: difference;
+  top: 0;
+  position: fixed;
+  width: 96%;
+  top: -80px;
+  transition: 0.65s ease;
+  z-index: 99;
+  .allcollections {
+    transition: all 0.2s linear 0s;
+    &:before {
+      content: "";
+      position: absolute;
+      display: flex;
+      height: 0px;
+      width: 0px;
+      margin-top: 1rem;
+      margin-left: -5rem;
+      opacity: 1;
+      background-color: #bbfeee;
+      transition: all 0.2s linear 0s;
+    }
+    &:hover {
+      text-indent: 20px;
+      &:before {
+        width: 60px;
+        height: 2px;
+        opacity: 1;
+        text-indent: 0px;
+      }
+    }
+  }
+  .allcollections a {
+    color: white;
+    font-family: "EuclidREGULAR";
+    font-size: 1.25em;
+  }
+  .about {
+    transition: all 0.2s linear 0s;
+    &:before {
+      content: "";
+      position: absolute;
+      display: flex;
+      height: 0px;
+      width: 0px;
+      margin-top: 1rem;
+      margin-left: 9.5rem;
+      opacity: 1;
+      background-color: #bbfeee;
+      transition: all 0.2s linear 0s;
+    }
+    &:hover {
+      text-indent: 20px;
+      &:before {
+        width: 60px;
+        height: 2px;
+        opacity: 1;
+        text-indent: 0px;
+      }
+    }
+  }
+  .about a {
+    color: white;
+    font-family: "EuclidREGULAR";
+    font-size: 1.25em;
+  }
+}
+.nav.fixed {
+  position: fixed;
+}
+
+/************************************* IMG BACKGROUND VISUEL ***************************************/
+
+.img-visuel-background {
+  position: relative;
+  background: url(img/visuel.png);
+  height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.img-visuel-background:hover {
+  cursor: url("img/arrowscrolldown.svg"), auto;
+}
+
+/************************************* MUSIC WEBSITE ***************************************/
+
+.pauseplay {
+  position: fixed;
+  margin-top: 48rem;
+  margin-left: 2rem;
+  z-index: 9999;
+  cursor: pointer;
+  #btnVideo {
+    z-index: 100;
+    background: 0;
+    border: 0;
+    color: #000000;
+    cursor: pointer;
+    font-family: "EuclidMEDIUM";
+  }
+}
+
+/************************************* INDEX ***************************************/
+
+.section-discover {
+  display: flex;
+  justify-content: center;
+  margin-top: 16rem;
+  .text-discover h1,
+  h2 {
+    color: white;
+    font-family: "didotBOLD";
+    font-size: 5em;
+    text-align: center;
+    span {
+      color: #bbfeee;
+    }
+  }
+  .text-discover h1:hover {
+    cursor: url("img/arrowdiscover.svg"), auto;
+  }
+}
+.section-video {
+  display: flex;
+  margin-top: 20rem;
+  video {
+    width: 16.65%;
+    border-radius: 5px;
+    box-shadow: 6px 0px 15px -8px #000000;
+  }
+}
+.container {
+  background-color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  .title1 {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      font-family: "didotBOLD";
+      font-size: 2.5em;
+    }
+    p {
+      font-family: "EuclidLIGHT";
+      font-size: 1em;
+      margin-top: 0.1rem;
+    }
+  }
+  .section-concept-text {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    .concept-text {
+      position: relative;
+      font-size: 8em;
+      font-family: "didotBOLD";
+      padding: 128px;
+      margin-top: 7rem;
+    }
+    .img-concept {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 175px;
+    }
+    .text-idea-process {
+      margin-top: 12rem;
+      margin-right: 3rem;
+      h2 {
+        font-family: "didotBOLD";
+        font-size: 2em;
+        margin-top: 4rem;
+      }
+      p {
+        font-family: "EuclidLIGHT";
+        font-size: 1em;
+        margin-top: 1.5rem;
+        line-height: 25px;
+      }
+      .btn1 {
+        background-color: transparent;
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 4rem;
+        font-family: "EuclidREGULAR";
+        opacity: 0.5;
+      }
+    }
+  }
+  .text-copyright {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    h2 {
+      font-family: "EuclidLIGHT";
+    }
+  }
+}
+
+/************************************* COLLECTIONS ***************************************/
+
+body.background-collections {
+  background: url(img/backgroundcollections.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.background-collections:hover {
+  cursor: url("img/cursorcollectionsanimals.png") auto;
+}
+
+.nav-about {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  .about {
+    transition: all 0.2s linear 0s;
+    &:before {
+      content: "";
+      position: absolute;
+      display: flex;
+      height: 0px;
+      width: 0px;
+      margin-top: 2.6rem;
+      margin-left: 14.5rem;
+      opacity: 1;
+      background-color: black;
+      transition: all 0.2s linear 0s;
+    }
+    &:hover {
+      text-indent: 20px;
+      &:before {
+        width: 60px;
+        height: 2px;
+        opacity: 1;
+        text-indent: 0px;
+      }
+    }
+  }
+  .about p {
+    color: black;
+    font-family: "EuclidREGULAR";
+    font-size: 1.25em;
+    margin: 25px 122px;
+  }
+}
+
+.section-collections {
+  display: flex;
+  position: fixed;
+  margin-left: 2rem;
+  z-index: 2;
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40rem;
+    font-family: "EuclidREGULAR";
+    gap: 0.3rem;
+  }
+  li {
+    list-style-type: none;
+    color: #000000;
+    transition: 0.5s ease;
+    opacity: 0.5;
+    font-size: 0.75em;
+    mix-blend-mode: difference;
+  }
+  li:hover {
+    transform: scaleX(2.5);
+    transform: scaleY(1.1);
+    opacity: 1;
+    font-size: 1.2em;
+    font-family: "EuclidMEDIUM";
+    cursor: pointer;
+  }
+  .variations {
+    transform: scaleX(2.5);
+    transform: scaleY(1.1);
+    opacity: 1;
+    font-size: 1.2em;
+    font-family: "EuclidMEDIUM";
+    cursor: pointer;
+  }
+  .animals {
+    transform: scaleX(2.5);
+    transform: scaleY(1.1);
+    opacity: 1;
+    font-size: 1.2em;
+    font-family: "EuclidMEDIUM";
+    cursor: pointer;
+  }
+  .soon {
+    transform: scaleX(2.5);
+    transform: scaleY(1.1);
+    opacity: 1;
+    font-size: 1.2em;
+    font-family: "EuclidMEDIUM";
+    cursor: pointer;
+  }
+}
+
+.section-animals-soon {
+  display: flex;
+  justify-content: center;
+  .animals-soon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 23rem;
+    font-family: "DidotBOLD";
+    font-size: 2em;
+  }
+  .animals-soon:hover {
+    cursor: wait;
+  }
+}
+.section-soon {
+  display: flex;
+  justify-content: center;
+  .soon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 23rem;
+    font-family: "DidotBOLD";
+    font-size: 2em;
+  }
+  .soon:hover {
+    cursor: wait;
+  }
+}
+
+/************************************* ABOUT ***************************************/
+
+.nav-close {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  width: 100%;
+  .close {
+    transition: all 0.2s linear 0s;
+    &:before {
+      content: "";
+      position: absolute;
+      display: flex;
+      height: 0px;
+      width: 0px;
+      margin-top: 2.6rem;
+      margin-left: 14.5rem;
+      opacity: 1;
+      background-color: white;
+      transition: all 0.2s linear 0s;
+    }
+    &:hover {
+      text-indent: 20px;
+      &:before {
+        width: 60px;
+        height: 2px;
+        opacity: 1;
+        text-indent: 0px;
+      }
+    }
+  }
+  .close p {
+    color: white;
+    font-family: "EuclidREGULAR";
+    font-size: 1.5em;
+    margin: 25px 122px;
+  }
+}
+.section-izidesign {
+  display: flex;
+  flex-direction: column;
+  margin-left: 9rem;
+  .izidesign h2 {
+    color: white;
+    font-family: "didotBOLD";
+    font-size: 15em;
+    margin-top: 10rem;
+  }
+  .abouts li {
+    color: white;
+    font-family: "EuclidLIGHT";
+    list-style: none;
+    text-align: initial;
+    margin-left: -2.5rem;
+    margin-top: 0.5rem;
+  }
+  .projects {
+    color: white;
+    font-family: "EuclidBOLD";
+    opacity: 0.59;
+    margin-top: 5rem;
+  }
+  .variations {
+    margin-top: 2rem;
+    a {
+      color: white;
+      font-family: "EuclidMEDIUM";
+      font-size: 1.5em;
+      opacity: 0.28;
+      transition: 1s ease;
+    }
+  }
+  .variations a:hover {
+    opacity: 1;
+  }
+}
+
+/************************************* RESPONSIVE ***************************************/
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  body {
+    margin: 10px;
+  }
+  .section-discover .circle svg {
+    margin-top: 1rem;
+    margin-left: -18rem;
+  }
+  .section-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .section-video video {
+    width: 84.65%;
+  }
+  .container .title1 {
+    margin-left: 0;
+    padding: 2rem;
+  }
+  .section-concept-text {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container .section-concept-text .concept-text {
+    padding: 0;
+    font-size: 4em;
+  }
+  .container .section-concept-text .img-concept {
+    margin: 0;
+    text-align: -webkit-right;
+    img {
+      width: 73%;
+    }
+  }
+  .container .section-concept-text .text-idea-process {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  .container .section-concept-text .text-idea-process {
+    margin-right: 0;
+  }
+  .container .section-concept-text .text-idea-process .btn1 {
+    opacity: 1;
+  }
+  .section-collections {
+    margin-left: 0;
+  }
+  .container-collections .variations {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-collections .variations .img-variations img {
+    width: 100%;
+  }
+  .container-collections .variations .img-variations-right img {
+    margin-right: 0;
+  }
+  .container-collections .variations .img-variations-left img {
+    margin-left: 0;
+  }
+  .nav-about .about p {
+    margin: 25px 75px;
+  }
+  .nav-close .close p {
+    margin: 25px 75px;
+  }
+  .section-izidesign {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  .section-izidesign .izidesign h2 {
+    font-size: 7em;
+    margin-top: 5rem;
+  }
+  .section-izidesign .variations a {
+    font-size: 1.7em;
+  }
+  .section-izidesign .abouts {
+    margin-top: 2rem;
+  }
+}
+
+// TABLETTE
+@media screen and (max-width: 1072px) {
+  .container .title1 {
+    margin-left: 0rem;
+    padding: 2rem;
+  }
+  .container .section-concept-text {
+    gap: 0;
+  }
+  .container .section-concept-text .concept-text {
+    padding: 25px;
+  }
+  .container .section-concept-text .img-concept {
+    margin: 81px;
+  }
+  .container .section-concept-text .text-idea-process {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  .container .section-concept-text .text-idea-process .btn1 {
+    opacity: 1;
+  }
+}
